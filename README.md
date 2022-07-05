@@ -50,8 +50,12 @@ Add your own domain name and have it point to the running services (try adding a
 
 > !NOTE: Domain names are not included in AWS’ free tier and will incur a cost.
 
-Deployed URL: http://image-filter-starter-code-dev222222222222222222222.us-east-1.elasticbeanstalk.com/
+Deployed URL: [Image Filter Service URL](http://image-filter-starter-code-dev222222222222222222222.us-east-1.elasticbeanstalk.com/)
 
-## With Image Filtering
+### Invalid Image Filter
+
+http://image-filter-starter-code-dev222222222222222222222.us-east-1.elasticbeanstalk.com/filteredimage?image_url=
+
+### Valid Image Filter
 
 http://image-filter-starter-code-dev222222222222222222222.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://tinypng.com/images/social/website.jpg
