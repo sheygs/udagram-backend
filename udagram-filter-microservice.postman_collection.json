@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "9db11068-e8d6-4c5f-b4ed-09dbef04d00f",
+		"name": "udagram-filter-microservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18348706"
+	},
+	"item": [
+		{
+			"name": "Valid Image Filter Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/filteredImage?image_url=https://tinypng.com/images/social/website.jpg",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"filteredImage"
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": "https://tinypng.com/images/social/website.jpg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid Image Filter Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/filteredImage",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"filteredImage"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Invalid Image Filter Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/filteredImage",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"filteredImage"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "77"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4d-o9AZQgaEqJRsw/hSBp31FjBzdfc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Jul 2022 22:43:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 400,\n    \"status\": \"failure\",\n    \"message\": \"Image Url is required\",\n    \"data\": null\n}"
+				}
+			]
+		}
+	]
+}
