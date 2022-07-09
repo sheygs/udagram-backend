@@ -1,8 +1,8 @@
 {
-        "name": "udacity-c2-image-filter",
+        "name": "udagram-filter-service",
         "version": "1.0.0",
-        "description": "",
-        "main": "index.js",
+        "description": "An image filtering cloud microservice application",
+        "main": "server.ts",
         "scripts": {
                 "test": "",
                 "clean": "rimraf www/ || true",
