@@ -13,7 +13,9 @@ export const sendErrorResponse = (res: Response, code: number, message: string, 
         res.status(code).json({
                 code,
                 status: 'failure',
-                message,
+                error: {
+                        message,
+                },
                 data,
         });
 };
