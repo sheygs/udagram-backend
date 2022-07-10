@@ -1,10 +1,10 @@
-import express from 'express';
+import express, { Application } from 'express';
 import bodyParser from 'body-parser';
 import indexRouter from './routes/index';
 
 (async () => {
         // Init the Express application
-        const app = express();
+        const app: Application = express();
 
         // Set the network port
         const port: number = Number(process.env.PORT) || 8082;

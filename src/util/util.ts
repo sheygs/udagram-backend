@@ -2,7 +2,7 @@ import fs from 'fs';
 import Jimp from 'jimp';
 
 // generate random number
-const generateRandomNumber = () => Math.floor(Math.random() * 2000);
+const generateRandomNumber = (): number => Math.floor(Math.random() * 2000);
 
 // inputURL: string - a publicly accessible url to an image file
 // to download, filter, and save the filtered image locally

@@ -22,7 +22,7 @@ export default async (req: Request, res: Response) => {
                         return sendErrorResponse(res, 400, 'Image Url is required', null);
                 }
 
-                const result = await filterImageFromURL(image_url);
+                const result: string = await filterImageFromURL(image_url);
 
                 res.status(200).sendFile(result, function () {
                         deleteLocalFiles([result]);
