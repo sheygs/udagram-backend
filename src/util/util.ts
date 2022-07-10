@@ -1,11 +1,11 @@
 import fs from 'fs';
 import Jimp from 'jimp';
 
-// helper function to generate random number
+// generate random number
 const generateRandomNumber = () => Math.floor(Math.random() * 2000);
 
 // inputURL: string - a publicly accessible url to an image file
-// helper function to download, filter, and save the filtered image locally
+// to download, filter, and save the filtered image locally
 // returns the absolute path to the local image
 export async function filterImageFromURL(inputURL: string): Promise<string> {
         return new Promise(async (resolve, reject) => {
@@ -25,7 +25,7 @@ export async function filterImageFromURL(inputURL: string): Promise<string> {
         });
 }
 
-// helper function to delete files on the local disk
+// to delete files on the local disk
 // useful to cleanup after tasks
 export async function deleteLocalFiles(files: Array<string>) {
         for (let file of files) {
